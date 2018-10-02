@@ -330,7 +330,7 @@ Public Class Form1
         Dim smtp As SmtpClient = New SmtpClient()
         smtp.DeliveryMethod = SmtpDeliveryMethod.Network             '邮件发送方式.这里通过网络
         smtp.Host = "smtp.sina.com"                                                  '邮件发送服务器
-        smtp.Credentials = New NetworkCredential("linsixing2001", "lsx0914")    '用户名跟密码
+        smtp.Credentials = New NetworkCredential("linsixing2001", "****")    '用户名跟密码
         Try
             smtp.Send(mg)
             MsgBox("发送成功！")
